@@ -22,4 +22,5 @@ scikit-learn==1.6.1
 einops==0.8.2
 tokenizers==0.22.2
 transformers==5.0.0
-huggingface-hub==1.6.0
+huggingface-hub==1.6.0gdown
+gdown
