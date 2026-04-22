@@ -1,0 +1,1 @@
+{"name": "seagull-bbpe", "lowercase": false, "punct_behavior": "contiguous", "special_tokens": ["<|pad|>", "<|unk|>", "<|endoftext|>", "<|scene|>", "<|uncanny|>", "<|caption|>", "<|endofcaption|>"]}

@@ -1,0 +1,52 @@
+{
+  "general": {
+    "device": "auto",
+    "pretraining": false,
+    "ddp_backend": "nccl"
+  },
+  "model": {
+    "embedding_dim": 768,
+    "num_layers": 12,
+    "num_heads": 12,
+    "intermediate_dim": 2048,
+    "max_positions": 128,
+    "dropout_proba": 0.1,
+    "attn_dropout_proba": 0.1,
+    "use_rope": true,
+    "ffn_activation": "swish",
+    "ffn_bias": false,
+    "layer_norm_embedding": false,
+    "base": 10000,
+    "causal": true,
+    "layer_norm_mode": "pre",
+    "layer_norm_type": "rms",
+    "weight_tying": true
+  },
+  "optimizer": {
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "weight_decay": 0.01,
+    "eps": 1e-08
+  },
+  "lr_scheduler": {
+    "annealing_period": 10000,
+    "max_lr": 1e-05,
+    "min_lr": 1e-06,
+    "lr_shrink_factor": 0.1
+  },
+  "trainer": {
+    "grad_clip_max_norm": 1.0,
+    "seq_start_pos": -1,
+    "use_amp": true,
+    "compile_model": true
+  },
+  "train_and_eval": {
+    "checkpoint_every": 1,
+    "num_workers": 2,
+    "batch_size": 16,
+    "num_epochs": 5,
+    "freeze_layer_ids": null
+  }
+}
