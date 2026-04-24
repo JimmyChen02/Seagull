@@ -1,6 +1,6 @@
 # Seagull: A Large Language Transformer Model that does Humorous Caption Generation  
 
-CS 4740/5740 · Spring 2026 · Cornell University
+CS 4740 Assignment
 
 A decoder-only transformer (~110M parameters) fine-tuned to generate humorous captions from scene descriptions, inspired by the [New Yorker Caption Contest](https://www.newyorker.com/cartoons/contest). The architecture is heavily inspired by [Meta's LLaMA-2](https://arxiv.org/pdf/2307.09288.pdf) and implements multi-head attention, RoPE positional embeddings, RMSNorm, and a causal attention mask.
 
